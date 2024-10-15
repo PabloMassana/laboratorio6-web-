@@ -6,14 +6,18 @@ class User {
     this.email = email;
     }
    }
-   
-   const users = [];
-   const save = (user) => {
-    users.push(user);
-    return user;
+const users = [];
+const save = (user) => {
+ users.push(user);
+ return user;
 }
+const get = () => {
+    return users;
+   }
+
 module.exports = {
  User,
- save
+ save,
+ get
 
 };
